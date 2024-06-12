@@ -1,15 +1,23 @@
-<rss version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>My App Updates</title>
-    <link>https://yourusername.github.io/repository/appcast.xml</link>
+    <link>https://inhohwangg.github.io/profile_html/docs/appcast.xml</link>
     <description>Updates for My App</description>
+    <language>en</language>
     <item>
       <title>Version 1.1.0</title>
-      <description>Bug fixes and performance improvements.</description>
+      <sparkle:releaseNotesLink>
+        <![CDATA[
+          Bug fixes and performance improvements.
+        ]]>
+      </sparkle:releaseNotesLink>
       <pubDate>Wed, 05 Jun 2024 12:00:00 +0000</pubDate>
-      <enclosure url="https://yourusername.github.io/repository/myapp.apk" length="12345" type="application/octet-stream" />
-      <sparkle:version>1.1.0</sparkle:version>
-      <sparkle:minimumSystemVersion>1.0.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://example.com/path/to/your/app.apk"
+        sparkle:version="1.1.0"
+        sparkle:shortVersionString="1.0.0"
+        type="application/octet-stream"/>
     </item>
   </channel>
 </rss>
